@@ -1,0 +1,51 @@
+header {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    animation: slideDown 1s ease-in-out;
+    margin-bottom: 20px;
+}
+
+/* Header text animation */
+h1 {
+    display: inline-block;
+    animation: fadeIn 2s ease-in-out, bounce 1.5s infinite alternate;
+}
+
+/* Slide-down animation */
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(5px);
+    }
+}
